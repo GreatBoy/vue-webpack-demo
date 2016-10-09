@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>数据请求</title>
+    <style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    li,
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    body {
+        padding: 50px;
+    }
+    
+    .ui-tab {
+        height: 50px;
+    }
+    </style>
+    <!--     <script src="js/vue.js"></script> -->
+</head>
+
+<body>
+    <APP></APP>
+    <!-- 导航栏 -->
+    <!--         <div class="border ui-tab">
+            <ul>
+                <li><a href="javascript:void(0);" @click="toggleTabs(requestText);">{{requestText}}</a></li>
+                <li><a href="javascript:void(0);" @click="toggleTabs(agentText);">{{agentText}}</a></li>
+            </ul>
+        </div> 
+        <div class="ui-content" style="height: 100px;">
+            <component :is="currentView" keep-alive></component>
+        </div>
+    </div>-->
+    <!-- 定义三个temp模板，用于切换 -->
+    <!--     <template id="request-content">
+        <div>请求</div>
+    </template>
+    <template id="agent-content">
+        <div>代理</div>
+    </template> -->
+    <script src="../dist/page2.bundle.js"></script>
+    <script>
+    // //扩展组件tab01
+    // var request = Vue.extend({
+    //     template: "#request-content",
+    // });
+    // //扩展组件tab02
+    // var agent = Vue.extend({
+    //     template: "#agent-content",
+    // });
+
+    // //新建vue实例
+    // new Vue({
+    //     el: "#container",
+    //     data: {
+    //         requestText: "request", //导航栏文本1
+    //         agentText: "agent", //导航栏文本2
+    //         currentView: 'request', //默认选中的导航栏
+    //     },
+    //     //局部注册组件
+    //     components: {
+    //         request: request,
+    //         agent: agent,
+    //     },
+    //     methods: {
+    //         //绑定tab的切换事件
+    //         toggleTabs: function(tabText) {
+    //             this.currentView = tabText;
+    //         }
+    //     }
+    // });
+    </script>
+</body>
+
+</html>
